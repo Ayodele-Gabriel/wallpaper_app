@@ -237,6 +237,7 @@ class _CategoriesDrawerState extends State<CategoriesDrawer> {
                             mainAxisAlignment: MainAxisAlignment.end,
                             children: [
                               AppButton(
+                                onPressed: widget.onClose,
                                 color: AppColors.appBackgroundColor,
                                 borderColor: AppColors.borderColor,
                                 child: Text(
@@ -265,6 +266,7 @@ class _CategoriesDrawerState extends State<CategoriesDrawer> {
                             child: Column(
                               children: [
                                 AppButton(
+                                  onPressed: widget.onClose,
                                   width: double.infinity,
                                   color: AppColors.appBackgroundColor,
                                   borderColor: AppColors.borderColor,
@@ -374,12 +376,14 @@ class _CategoriesDrawerState extends State<CategoriesDrawer> {
               width: 24.0,
               height: 24.0,
               padding: const EdgeInsets.all(3.0),
-              decoration: BoxDecoration(border: Border.all(color: value ? AppColors.rainbowTextColor1 : AppColors.appGrey8,),
-                borderRadius: BorderRadius.circular(5.0)
+              decoration: BoxDecoration(
+                border: Border.all(color: value ? AppColors.rainbowTextColor1 : AppColors.appGrey8),
+                borderRadius: BorderRadius.circular(5.0),
               ),
-              child:  Container(
-                decoration: BoxDecoration(color: value ? AppColors.rainbowTextColor1 : Colors.transparent,
-                    borderRadius: BorderRadius.circular(5.0)
+              child: Container(
+                decoration: BoxDecoration(
+                  color: value ? AppColors.rainbowTextColor1 : Colors.transparent,
+                  borderRadius: BorderRadius.circular(5.0),
                 ),
               ),
             ),

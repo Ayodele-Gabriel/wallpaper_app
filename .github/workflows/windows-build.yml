@@ -24,7 +24,6 @@ jobs:
       - name: Check Flutter environment
         run: flutter doctor -v
 
-
       - name: Get dependencies
         run: flutter pub get
 
